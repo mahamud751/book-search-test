@@ -44,7 +44,9 @@ export default function Home() {
       const totalResults = data.numFound || 0;
       setTotalPages(Math.ceil(totalResults / booksPerPage));
     } catch (err) {
-      setError("An error occurred while fetching books. Please try again.");
+      setError(
+        ` ${err}An error occurred while fetching books. Please try again.`
+      );
     } finally {
       setLoading(false);
     }
