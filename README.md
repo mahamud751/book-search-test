@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Book Search Application
+A Next.js web application that allows users to search for books using the Open Library API. The app features a clean, responsive UI with pagination, beautiful card-based results, and error handling.
+Features
 
-## Getting Started
+Search Functionality: Search for books by title, author, or keyword.
+Responsive Design: Displays results in responsive.
+Pagination: Navigate through search results with Previous/Next buttons, showing 4 books per page.
+Beautiful Cards: Book results are presented in styled cards with hover effects and truncated text for readability.
+Error Handling: Displays user-friendly messages for API errors or no results.
+Loading State: Shows a spinner during API requests.
+TypeScript: Type-safe code for better maintainability.
 
-First, run the development server:
+Tech Stack
 
-```bash
+Framework: Next.js (App Router) 15.3.1.
+Language: TypeScript
+Styling: Tailwind CSS
+API: Open Library API
+Deployment: Vercel
+Version Control: Git/GitHub
+
+Prerequisites
+
+Node.js (v16 or higher)
+npm (v7 or higher)
+Git
+A GitHub account
+VPS Server
+
+Setup Instructions
+
+Clone the Repository:
+git clone https://github.com/YOUR_USERNAME/book-search-app.git
+cd book-search-app
+
+Install Dependencies:
+npm install
+
+Run the Development Server:
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3042 in your browser to view the app.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Usage
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Enter a search query (e.g., "Harry Potter") in the input field and click "Search".
+View results displayed as cards, showing book titles Raft authors.
+Use the "Previous" and "Next" buttons to navigate through pages of results.
+If no results are found or an error occurs, a message will be displayed.
 
-## Learn More
+Deployment
+Deploy to VPS Server
 
-To learn more about Next.js, take a look at the following resources:
+Push to GitHub:
+git add .
+git commit -m "Initial commit"
+git push origin main
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Deploy the application.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Access the Deployed App:
+Vercel will provide a public URL (e.g., https://book-search-app.vercel.app).
 
-## Deploy on Vercel
+Submission Details
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+GitHub Repository: https://github.com/YOUR_USERNAME/book-search-app
+Vercel URL: https://book-search-app.vercel.app (replace with your actual URL)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+API Details
+The app uses the Open Library Search API:
+
+Endpoint: https://openlibrary.org/search.json?q={query}&page={page}
+No API key required for basic search.
+Returns book data including title, author, and more.
+Pagination is supported via the page parameter.
+
+License
+This project is licensed under the MIT License.
