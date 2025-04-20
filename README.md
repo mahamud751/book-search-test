@@ -30,7 +30,7 @@ VPS Server
 Setup Instructions
 
 Clone the Repository:
-git clone https://github.com/YOUR_USERNAME/book-search-app.git
+git clone https://github.com/mahamud751/book-search-test.git
 cd book-search-app
 
 Install Dependencies:
@@ -39,7 +39,7 @@ npm install
 Run the Development Server:
 npm run dev
 
-Open http://localhost:3042 in your browser to view the app.
+Open http://localhost:3060 in your browser to view the app.
 
 Usage
 
@@ -59,7 +59,7 @@ git push origin main
 Deploy the application.
 
 Access the Deployed App:
-Vercel will provide a public URL (e.g., https://book-search-app.vercel.app).
+VPS will provide a public URL (e.g., https://book.pino10.shop).
 
 Submission Details
 
